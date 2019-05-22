@@ -1,4 +1,4 @@
-package com.sumit.mustDoCoding;
+package com.HackerEarth.Algos;
 
 public class EquilibriumPoint {
 

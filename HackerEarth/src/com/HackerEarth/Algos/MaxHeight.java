@@ -1,4 +1,4 @@
-package com.sumit.newBeginning;
+package com.HackerEarth.Algos;
 
 public class MaxHeight {
 

@@ -1,4 +1,4 @@
-package com.sumit.newBeginning;
+package com.HackerEarth.Algos;
 
 import java.util.Scanner;
 
