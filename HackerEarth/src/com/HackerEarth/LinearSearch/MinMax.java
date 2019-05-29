@@ -7,30 +7,25 @@ public class MinMax {
 		int[] a= {1,2,3,4,5};
 		int n = a.length;
 		
-		int sum=0;
-		int max = 0;
-		int min =0;
-		for(int i:a)
-		{
-			min += i;
-		}
+		 int sum=0;
+			int max = 0;
 		
-		for(int i=0; i<n; i++)
-		{
-			sum =0;
-			for(int j=0; j<n; j++)
+			for(int i=0;i<n;i++)
 			{
-				if(j!=i)
-					sum +=a[j];
+				sum += a[i];
 			}
-			if(sum > max)
-				max = sum;
-			else if(sum < min)
-				min = sum;
-		}
-		
-		System.out.println(max);
-		System.out.println(min);
+		    int  min =sum;
+			
+			for(int i=0; i<n; i++)
+			{
+				int diff = sum - a[i];
+				if(diff > max)
+				    max = diff;
+				else if(diff < min)
+				 min = diff ;
+			}
+			
+			System.out.println(min+" "+max);
 	}
 
 }
