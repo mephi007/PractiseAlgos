@@ -1,16 +1,14 @@
 package learnUpgrad;
 
 public class StringPermutation {
-	
-	public static boolean permute(String str, int l, int r)
+	static int count =0;
+	public static void permute(String str, int l, int r)
 	{
 
 		if(l==r)
 		{
-
-			System.out.println(str);
-			return true;
-			
+			count++;
+			System.out.println(str+" "+ count);			
 		}
 		else
 		{
@@ -21,7 +19,6 @@ public class StringPermutation {
 				str = swap(str, l,i);
 			}
 		}
-		return false;
 	}
 	
 	public static String swap(String str, int i, int j)
@@ -39,13 +36,8 @@ public class StringPermutation {
 		String str = "ABCD";
 		int l=0;
 		int r = str.length()-1;
-		int count =0;
-		while(permute(str, l, r))
-		{
-			count++;
-			System.out.println(count);
-		}
-		
+		permute(str, l, r);
+
 
 	}
 
